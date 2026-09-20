@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e4734e9a-d5b3-4a6e-ab1f-9290f88157bd</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.15.3-beta.1" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RaizesNordeste.Application\RaizesNordeste.Application.csproj" />
+    <ProjectReference Include="..\RaizesNordeste.Infrastructure\RaizesNordeste.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

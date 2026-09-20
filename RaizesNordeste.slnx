@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Project Path="RaizesNordeste.Application/RaizesNordeste.Application.csproj" />
+  <Project Path="RaizesNordeste.Domain/RaizesNordeste.Domain.csproj" />
+  <Project Path="RaizesNordeste.Infrastructure/RaizesNordeste.Infrastructure.csproj" />
+  <Project Path="RaizesNordeste.UnitTests/RaizesNordeste.UnitTests.csproj" />
+  <Project Path="RaizesNordesteApi/RaizesNordesteApi.csproj" />
+</Solution>
